@@ -26,6 +26,8 @@ type Config struct {
 	ClientSecret  string `json:"client_secret"`  // Client Secret
 	TenantName    string `json:"tenant_name"`    // Tenant name
 	TokenSecret   string `json:"token_secret"`   // Token Secret
+	PatchPath     string `json:"patch_path"`     // Patch Path
+	LogLevel      int    `json:"log_level"`      // log level
 }
 
 // LoadConfig loads a configuration at the provided filepath, returning the
